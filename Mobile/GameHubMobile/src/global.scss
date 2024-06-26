@@ -35,3 +35,81 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+/* Ensure the body and html take full height */
+html, body, ion-app, ion-content {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scroll bars */
+  }
+  
+  ion-header, ion-content {
+    --background: #8B0000; /* Set the background color for the header */
+    // height: 100%;
+  }
+  
+  ion-grid {
+    height: 100%;
+  }
+  
+  ion-row {
+    height: 100%;
+  }
+  
+  /* Style the profile card to reduce its height and font size */
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #ffffff; /* Background color for the profile card */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: auto; /* Let the content define the height */
+  }
+  
+  .profile-avatar {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-bottom: 0.5rem; /* Adjust spacing as needed */
+  }
+  
+  .profile-avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .profile-name, .profile-playing {
+    margin: 0;
+    text-align: center;
+    font-size: 12px; /* Adjust font size as needed */
+    line-height: 1.2; /* Adjust line height as needed */
+  }
+  
+  /* Remove margin and padding from ion-list and ion-item */
+  .side-menu {
+    padding: 0; /* Remove padding from ion-list */
+  }
+  
+  .side-menu ion-item {
+    margin: 0; /* Remove margin from ion-item */
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  /* Style the top buttons */
+  .top-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .top-buttons ion-button {
+    margin: 0.5rem;
+    flex: 1 1 auto; /* Ensure buttons resize and fit within the row */
+  }
+  

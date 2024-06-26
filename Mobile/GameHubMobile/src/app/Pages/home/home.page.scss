@@ -1,13 +1,88 @@
 // Background color for the entire page
 ion-content {
-    --background: #8B0000; // Dark red background
+    --background: radial-gradient(circle, #c52640, #8B0000); // Dark red background
+  }
+
+  /* Style the ion-header and ion-toolbar */
+ion-header {
+    --background: #8B0000; /* Background color for the entire header */
   }
   
-  .profile-card {
-    text-align: center;
-    margin-top: 20px;
-    background: transparent; // No background color
-    border: none;
+  ion-toolbar {
+    --background: transparent; /* Ensure the toolbar background does not override the header background */
+  }
+
+  .custom-ion-button{
+    --background: linear-gradient(45deg, #8B0000, #FF4500);
+    border-radius: 30px!important;
+    height: 4.2rem!important;
+  }
+  
+/* Style the profile card and avatar */
+/* Style the profile card to reduce its height and font size */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #ffffff; /* Background color for the profile card */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 30px; /* Adjust height as needed */
+}
+
+.profile-avatar {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  margin-bottom: 0.5rem; /* Adjust spacing as needed */
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-name, .profile-playing {
+  margin: 0;
+  text-align: center;
+  font-size: 12px; /* Adjust font size as needed */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+  
+  /* Remove margin and padding from ion-list and ion-item */
+  .side-menu {
+    padding: 0; /* Remove padding from ion-list */
+  }
+  
+  .side-menu ion-item {
+    margin: 0; /* Remove margin from ion-item */
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  /* Style the top buttons */
+  .top-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .top-buttons ion-button {
+    margin: 0rem;
+  }
+  
+
+  ::ng-deep .item-native{
+    background-color: #8B0000!important;
+  }
+
+  .custom-ion-item {
+    --background: linear-gradient(45deg, #8B0000, #FF4500); /* Example gradient from dark red to orange-red */
+    --ion-item-background: linear-gradient(45deg, #8B0000, #FF4500); /* For older Ionic versions */
+    border: 1px solid #8B0000!important; /* Replace with your desired border color */
+    border-radius: 4px!important; /* Optional: add border radius */
   }
   
   .profile-avatar {
@@ -30,6 +105,7 @@ ion-content {
   
   .side-menu {
     margin-top: 20px;
+    background-color: #8B0000;
   }
   
   .side-menu ion-item {
@@ -51,7 +127,7 @@ ion-content {
   .top-buttons {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
+    margin: 4px 0;
   }
   
   .top-buttons ion-button {
@@ -95,5 +171,50 @@ ion-content {
     --color: #fff; // White text color
     margin-top: 10px;
     border-radius: 20px;
+  }
+
+  /* Remove margin and padding from ion-list and ion-item */
+.side-menu {
+    padding: 0; /* Remove padding from ion-list */
+  }
+  
+  .side-menu ion-item {
+    margin: 0; /* Remove margin from ion-item */
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  ion-header{
+    background-color: #8B0000!important;
+  }
+
+  /* Style the circular buttons */
+.circular-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin: 0.5rem; /* Adjust spacing as needed */
+    font-size: 10px; /* Adjust font size as needed */
+    --background: transparent; /* Transparent background */
+    --background-focused: #d3d3d3; /* Background color on focus */
+    --background-activated: #d3d3d3; /* Background color on click */
+  }
+  
+ 
+  /* Style the top buttons container */
+  .top-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem; /* Adjust spacing as needed */
+  }
+  
+  .top-buttons ion-button {
+    margin: 0.5rem; /* Adjust spacing between buttons */
   }
   
