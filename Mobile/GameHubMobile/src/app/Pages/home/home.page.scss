@@ -1,0 +1,99 @@
+// Background color for the entire page
+ion-content {
+    --background: #8B0000; // Dark red background
+  }
+  
+  .profile-card {
+    text-align: center;
+    margin-top: 20px;
+    background: transparent; // No background color
+    border: none;
+  }
+  
+  .profile-avatar {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff; // White text color
+  }
+  
+  .profile-playing {
+    color: #ddd; // Light grey color
+  }
+  
+  .side-menu {
+    margin-top: 20px;
+  }
+  
+  .side-menu ion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent; // Transparent background
+    color: #fff; // White text color
+  }
+  
+  .side-menu ion-icon {
+    color: #fff; // White icon color
+  }
+  
+  .side-menu ion-item:hover {
+    background-color: #a52a2a; // Darker red on hover
+  }
+  
+  .top-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .top-buttons ion-button {
+    margin: 0 10px;
+    --background: #ffcc00; // Gold background
+    --color: #8B0000; // Dark red text color
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  .top-buttons ion-button:hover {
+    --background: #e6b800; // Slightly darker gold on hover
+  }
+  
+  // Add your main content styles here
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .card-item {
+    background-color: #fff; // White card background
+    color: #8B0000; // Dark red text color
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(25% - 40px); // Responsive cards
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow
+    text-align: center;
+  }
+  
+  .card-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Slightly stronger shadow on hover
+  }
+  
+  .card-item ion-button {
+    --background: #32CD32; // Green button background
+    --color: #fff; // White text color
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  
